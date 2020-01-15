@@ -19,43 +19,56 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tsm-eJ-Ozd">
-                                <rect key="frame" x="30" y="783" width="85" height="67"/>
+                                <rect key="frame" x="29" y="777" width="85" height="67"/>
                                 <state key="normal" title="Button" image="locationButton.png"/>
                                 <connections>
                                     <action selector="show_route:" destination="BYZ-38-t0r" eventType="touchUpInside" id="klA-Gz-lWM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uze-M0-F0D">
-                                <rect key="frame" x="133" y="783" width="65" height="66"/>
-                                <state key="normal" title="Button" image="walk.png"/>
-                                <connections>
-                                    <action selector="walk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HH1-j5-U3G"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJx-eD-8fT">
-                                <rect key="frame" x="227" y="784" width="82" height="66"/>
+                                <rect key="frame" x="263" y="775" width="74" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="zTv-FU-ly6"/>
                                 </constraints>
-                                <state key="normal" title="Drive" image="car.jpeg"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" image="car.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25" scale="large"/>
+                                </state>
                                 <connections>
                                     <action selector="drive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bvF-kF-W3m"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9H-Zt-eUk">
-                                <rect key="frame" x="340" y="176" width="54" height="59"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JW9-Lv-04h">
+                                <rect key="frame" x="350" y="123" width="44" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="out.jpeg"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" image="plus.magnifyingglass" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="31" scale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="zoom_in:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wp9-D1-sQT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9H-Zt-eUk">
+                                <rect key="frame" x="350" y="176" width="44" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" image="minus.magnifyingglass" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="36" scale="default"/>
+                                </state>
                                 <connections>
                                     <action selector="zoom_out:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kfC-pn-vhq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JW9-Lv-04h">
-                                <rect key="frame" x="331" y="94" width="63" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="zoom in.png"/>
+                            <button opaque="NO" contentMode="center" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uze-M0-F0D">
+                                <rect key="frame" x="185" y="777" width="62" height="64"/>
+                                <state key="normal" title="Button" image="images.png">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="medium" weight="light">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
                                 <connections>
-                                    <action selector="zoom_in:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wp9-D1-sQT"/>
+                                    <action selector="walk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HH1-j5-U3G"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -89,10 +102,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="car.jpeg" width="336" height="150"/>
+        <image name="car.fill" catalog="system" width="64" height="46"/>
+        <image name="images.png" width="225" height="225"/>
         <image name="locationButton.png" width="67" height="67"/>
-        <image name="out.jpeg" width="225" height="225"/>
-        <image name="walk.png" width="216" height="233"/>
-        <image name="zoom in.png" width="284" height="177"/>
+        <image name="minus.magnifyingglass" catalog="system" width="64" height="56"/>
+        <image name="plus.magnifyingglass" catalog="system" width="64" height="56"/>
     </resources>
 </document>

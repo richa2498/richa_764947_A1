@@ -64,6 +64,7 @@ class ViewController:  UIViewController,CLLocationManagerDelegate, MKMapViewDele
     }
     @IBAction func show_route(_ sender: Any) {
         if coordinate != nil{
+              mapView.removeOverlays(mapView.overlays)
         showDirection(destination:coordinate,type: .automobile)
     }
     }
@@ -173,7 +174,7 @@ class ViewController:  UIViewController,CLLocationManagerDelegate, MKMapViewDele
          
         let render = MKPolylineRenderer(overlay: overlay)
         render.strokeColor = .darkGray
-        render.lineWidth = 6.0
+        render.lineWidth = 4.0
         return render
     }
         return MKOverlayRenderer()

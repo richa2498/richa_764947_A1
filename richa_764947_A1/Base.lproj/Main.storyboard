@@ -18,11 +18,44 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mps-7K-Aos">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tsm-eJ-Ozd">
-                                <rect key="frame" x="309" y="775" width="85" height="67"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tsm-eJ-Ozd">
+                                <rect key="frame" x="30" y="783" width="85" height="67"/>
                                 <state key="normal" title="Button" image="locationButton.png"/>
                                 <connections>
                                     <action selector="show_route:" destination="BYZ-38-t0r" eventType="touchUpInside" id="klA-Gz-lWM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uze-M0-F0D">
+                                <rect key="frame" x="133" y="783" width="65" height="66"/>
+                                <state key="normal" title="Button" image="walk.png"/>
+                                <connections>
+                                    <action selector="walk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HH1-j5-U3G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJx-eD-8fT">
+                                <rect key="frame" x="227" y="784" width="82" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="zTv-FU-ly6"/>
+                                </constraints>
+                                <state key="normal" title="Drive" image="car.jpeg"/>
+                                <connections>
+                                    <action selector="drive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bvF-kF-W3m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9H-Zt-eUk">
+                                <rect key="frame" x="340" y="176" width="54" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="out.jpeg"/>
+                                <connections>
+                                    <action selector="zoom_out:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kfC-pn-vhq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JW9-Lv-04h">
+                                <rect key="frame" x="331" y="94" width="63" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="zoom in.png"/>
+                                <connections>
+                                    <action selector="zoom_in:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wp9-D1-sQT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -30,15 +63,24 @@
                         <constraints>
                             <constraint firstItem="mps-7K-Aos" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9Qc-LA-Whd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tsm-eJ-Ozd" secondAttribute="bottom" constant="20" id="APE-g8-pFQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yJx-eD-8fT" secondAttribute="trailing" constant="23" id="CuT-vq-1xp"/>
                             <constraint firstItem="mps-7K-Aos" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GOs-1B-iKt"/>
+                            <constraint firstItem="Uze-M0-F0D" firstAttribute="top" secondItem="yJx-eD-8fT" secondAttribute="bottom" constant="16" id="M1C-Nz-UjZ"/>
+                            <constraint firstItem="yJx-eD-8fT" firstAttribute="centerX" secondItem="Uze-M0-F0D" secondAttribute="centerX" id="VFw-h7-wGt"/>
                             <constraint firstAttribute="bottom" secondItem="mps-7K-Aos" secondAttribute="bottom" id="Zp7-Nr-pE9"/>
+                            <constraint firstItem="yJx-eD-8fT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="309" id="dzK-zV-BSE"/>
+                            <constraint firstItem="Uze-M0-F0D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="318" id="l43-pv-nK4"/>
                             <constraint firstItem="mps-7K-Aos" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qme-1H-2wv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Uze-M0-F0D" secondAttribute="bottom" constant="102" id="uel-2h-Vne"/>
+                            <constraint firstItem="yJx-eD-8fT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="581" id="xFk-uf-WGG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="direction" destination="Tsm-eJ-Ozd" id="ypY-Hx-K12"/>
                         <outlet property="mapView" destination="mps-7K-Aos" id="MK3-Vy-aKy"/>
+                        <outlet property="zoom_in" destination="JW9-Lv-04h" id="4aP-xo-YDs"/>
+                        <outlet property="zoom_out" destination="k9H-Zt-eUk" id="8n1-ul-hcT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -47,6 +89,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="car.jpeg" width="336" height="150"/>
         <image name="locationButton.png" width="67" height="67"/>
+        <image name="out.jpeg" width="225" height="225"/>
+        <image name="walk.png" width="216" height="233"/>
+        <image name="zoom in.png" width="284" height="177"/>
     </resources>
 </document>

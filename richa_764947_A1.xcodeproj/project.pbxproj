@@ -16,6 +16,10 @@
 		9BE4E8F523CE639000E4C783 /* richa_764947_A1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE4E8F423CE639000E4C783 /* richa_764947_A1Tests.swift */; };
 		9BE4E90023CE639000E4C783 /* richa_764947_A1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE4E8FF23CE639000E4C783 /* richa_764947_A1UITests.swift */; };
 		9BE4E90E23CE64A600E4C783 /* locationButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BE4E90D23CE64A600E4C783 /* locationButton.png */; };
+		9BE4E91023CE961E00E4C783 /* walk.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BE4E90F23CE961E00E4C783 /* walk.png */; };
+		9BE4E91223CE962200E4C783 /* car.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9BE4E91123CE962200E4C783 /* car.jpeg */; };
+		9BE4E91423CE977A00E4C783 /* out.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9BE4E91323CE977A00E4C783 /* out.jpeg */; };
+		9BE4E91623CE977E00E4C783 /* zoom in.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BE4E91523CE977E00E4C783 /* zoom in.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		9BE4E8FF23CE639000E4C783 /* richa_764947_A1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = richa_764947_A1UITests.swift; sourceTree = "<group>"; };
 		9BE4E90123CE639000E4C783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BE4E90D23CE64A600E4C783 /* locationButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locationButton.png; sourceTree = "<group>"; };
+		9BE4E90F23CE961E00E4C783 /* walk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = walk.png; sourceTree = "<group>"; };
+		9BE4E91123CE962200E4C783 /* car.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car.jpeg; sourceTree = "<group>"; };
+		9BE4E91323CE977A00E4C783 /* out.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = out.jpeg; sourceTree = "<group>"; };
+		9BE4E91523CE977E00E4C783 /* zoom in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zoom in.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,10 @@
 				9BE4E8DF23CE639000E4C783 /* SceneDelegate.swift */,
 				9BE4E8E123CE639000E4C783 /* ViewController.swift */,
 				9BE4E8E323CE639000E4C783 /* Main.storyboard */,
+				9BE4E91123CE962200E4C783 /* car.jpeg */,
+				9BE4E90F23CE961E00E4C783 /* walk.png */,
+				9BE4E91523CE977E00E4C783 /* zoom in.png */,
+				9BE4E91323CE977A00E4C783 /* out.jpeg */,
 				9BE4E8E623CE639000E4C783 /* Assets.xcassets */,
 				9BE4E90D23CE64A600E4C783 /* locationButton.png */,
 				9BE4E8E823CE639000E4C783 /* LaunchScreen.storyboard */,
@@ -236,7 +248,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BE4E8EA23CE639000E4C783 /* LaunchScreen.storyboard in Resources */,
+				9BE4E91023CE961E00E4C783 /* walk.png in Resources */,
+				9BE4E91623CE977E00E4C783 /* zoom in.png in Resources */,
+				9BE4E91223CE962200E4C783 /* car.jpeg in Resources */,
 				9BE4E8E723CE639000E4C783 /* Assets.xcassets in Resources */,
+				9BE4E91423CE977A00E4C783 /* out.jpeg in Resources */,
 				9BE4E90E23CE64A600E4C783 /* locationButton.png in Resources */,
 				9BE4E8E523CE639000E4C783 /* Main.storyboard in Resources */,
 			);
